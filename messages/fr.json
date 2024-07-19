@@ -1,0 +1,37 @@
+{
+	"common": {
+		"latestPosts": "Posts récents",
+		"placeholder": "Rechercher un article",
+		"noResults": "Recherche introuvable",
+		"viewMore": "voir plus",
+		"home": "Acceuil",
+		"blog": "Blog",
+		"projects": "Projets",
+		"about": "A propos",
+		"noSupport": "Cet article ne supporte pas la langue actuelle.",
+		"backToBlog": "Blog",
+		"backToProjects": "Projets",
+		"backToHome": "Acceuil",
+		"postViews": "<count></count> vues",
+		"notFound": "Désolé, cette page est introuvable.",
+		"chooseLanguage": "Choisir une langue",
+		"skills": "Technologies",
+		"cv": "CV",
+		"others": "Autres"
+	},
+	"homePage": {
+		"description": "👋 Salut, Je suis Elfried Fortunatus KIDJE, développeur web full stack et mobile. J'ai une expérience de 4 ans en tant que développeur web, ce qui m'a permit de particier à plusieurs projets. Je suis un vrai passionné et ai un bon sens relationnel que je saurai mettre au service de votre entreprise.",
+		"subTitle": "Développeur web et mobile"
+	},
+	"blogPage": {
+		"description": "Bienvenu sur mon blog! Here I will record my learning experience and knowledge in software development.",
+		"subTitle": "<highlight></highlight> posts about code and more..."
+	},
+	"projectsPage": {
+		"description": "Liste de quelques projects que j'ai eu à développer. Pour des raisons de confidentialité, plusieurs projets \"privés\" ne sont pas mentionnés ici."
+	},
+	"aboutPage": {
+		"title": "Elfried Fortunatus KIDJE",
+		"description": "A propos de moi, mes formations et epériences"
+	}
+}

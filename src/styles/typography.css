@@ -1,0 +1,35 @@
+.prose {
+	@apply max-w-none text-foreground/80;
+
+	hr {
+		@apply my-[2em] border-border;
+	}
+
+	ul {
+		@apply pl-[1em];
+
+		> li {
+			@apply p-0.5 m-0 marker:text-foreground/20;
+
+			> * {
+				@apply my-0;
+			}
+		}
+	}
+
+	strong {
+		@apply font-bold text-foreground;
+	}
+
+	blockquote {
+		@apply bg-neutral-900 p-4 text-foreground border-primary rounded;
+
+		> p {
+			@apply m-0;
+		}
+	}
+
+	:not(pre) > code {
+		@apply bg-muted my-1 p-1 border rounded-lg text-foreground border-border;
+	}
+}

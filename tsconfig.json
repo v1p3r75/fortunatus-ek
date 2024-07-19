@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"types": ["@testing-library/jest-dom"],
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["src/components/*"],
+			"@/hooks/*": ["src/hooks/*"],
+			"@/utils/*": ["src/utils/*"],
+			"@/lib/*": ["src/lib/*"],
+			"@/config/*": ["src/config/*"],
+			"@/providers/*": ["src/providers/*"],
+			"@/styles/*": ["src/styles/*"],
+			"@/content": ["./.velite"]
+		}
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts",
+		"./.veltie"
+	],
+	"exclude": ["node_modules"]
+}
