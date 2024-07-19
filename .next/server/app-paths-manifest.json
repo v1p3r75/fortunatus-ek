@@ -1,0 +1,15 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/api/github/route": "app/api/github/route.js",
+  "/api/views/route": "app/api/views/route.js",
+  "/feed.xml/route": "app/feed.xml/route.js",
+  "/[locale]/(home)/page": "app/[locale]/(home)/page.js",
+  "/[locale]/[...rest]/page": "app/[locale]/[...rest]/page.js",
+  "/[locale]/projects/[slug]/page": "app/[locale]/projects/[slug]/page.js",
+  "/[locale]/blog/[slug]/page": "app/[locale]/blog/[slug]/page.js",
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/blog/page": "app/[locale]/blog/page.js",
+  "/[locale]/projects/page": "app/[locale]/projects/page.js"
+}

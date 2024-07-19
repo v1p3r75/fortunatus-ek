@@ -12,7 +12,6 @@
 .env
 
 # next.js
-/.next/
 /out/
 
 # production
