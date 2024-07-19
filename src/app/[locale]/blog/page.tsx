@@ -28,10 +28,8 @@ export const generateMetadata = async ({
 	};
 };
 
-const BlogPage = () => {
+const BlogPage = ({ params: { locale } } : any) => {
 	
-	const locale = useLocale();
-
 	unstable_setRequestLocale(locale);
 
 	const t = useTranslations();
