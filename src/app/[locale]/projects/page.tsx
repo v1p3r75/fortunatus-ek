@@ -31,10 +31,8 @@ export const generateMetadata = async ({
 	};
 };
 
-const ProjectsPage = () => {
+const ProjectsPage = ({ params: { locale } } : any) => {
 	
-	const locale = useLocale();
-
 	unstable_setRequestLocale(locale);
 	
 	const t = useTranslations();

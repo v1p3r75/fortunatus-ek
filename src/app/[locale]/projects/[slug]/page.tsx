@@ -62,6 +62,9 @@ type ProjectLayoutProps = {
 };
 
 const ProjectLayout = ({ params }: ProjectLayoutProps) => {
+	
+	unstable_setRequestLocale(params.locale!);
+
 	const t = useTranslations('common');
 	const project = getContentWithFallback({
 		contentItems: allProjects,
@@ -72,7 +75,6 @@ const ProjectLayout = ({ params }: ProjectLayoutProps) => {
 	if (!project) {
 		notFound();
 	}
-	unstable_setRequestLocale(params.locale!);
 
 	const { title, imageUrl, demoUrl, repoUrl } = project;
 
