@@ -29,9 +29,11 @@ export const generateMetadata = async ({
 };
 
 const BlogPage = () => {
-	const locale = useLocale();
-	unstable_setRequestLocale(locale);
 	
+	const locale = useLocale();
+
+	unstable_setRequestLocale(locale);
+
 	const t = useTranslations();
 	const posts = allPosts
 		.filter((post) => post.language === locale)

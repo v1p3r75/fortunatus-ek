@@ -8,11 +8,13 @@ import { allProjects } from '@/content';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Projects = () => {
-	
+
 	const locale = useLocale();
+	
 	unstable_setRequestLocale(locale);
 
 	const t = useTranslations('common');
+	
 	const projects = allProjects
 		.filter((project) => project.language === locale)
 		.splice(0, 4);

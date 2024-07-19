@@ -7,9 +7,13 @@ import { allPosts } from '@/content';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Posts = () => {
+	
 	const locale = useLocale();
+	
 	unstable_setRequestLocale(locale);
+	
 	const t = useTranslations('common');
+	
 	const format = useFormatter();
 
 	const posts = allPosts
