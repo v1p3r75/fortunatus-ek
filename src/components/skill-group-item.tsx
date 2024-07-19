@@ -1,8 +1,7 @@
-import React from 'react'
-import GradientText from './ui/gradient-text'
-import SkillItem from './skill-item'
-import { techs } from '@/config/techs'
-import { GroupId } from 'src/types/global'
+import GradientText from './ui/gradient-text';
+import SkillItem from './skill-item';
+import { techs } from '@/config/techs';
+import { GroupId } from 'src/types/global';
 
 const SkillGroupItem = ({ title, id }: { title: string, id: GroupId }) => {
 
