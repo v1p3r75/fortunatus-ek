@@ -66,6 +66,8 @@ type BlogPostLayoutProps = {
 };
 
 const BlogPostLayout = ({ params }: BlogPostLayoutProps) => {
+	unstable_setRequestLocale(params.locale!);
+
 	const t = useTranslations('common');
 	const format = useFormatter();
 
@@ -74,8 +76,6 @@ const BlogPostLayout = ({ params }: BlogPostLayoutProps) => {
 		slug: params.slug,
 		locale: params.locale,
 	});
-
-	unstable_setRequestLocale(params.locale!);
 
 	if (!post) {
 		notFound();

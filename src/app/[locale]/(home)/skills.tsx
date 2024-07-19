@@ -4,6 +4,7 @@ import { techsGroup } from "@/config/techs";
 import { useTranslations } from "next-intl";
 
 const Skills = () => {
+
 	const t = useTranslations('common')
 
 	return (

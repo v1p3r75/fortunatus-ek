@@ -7,15 +7,14 @@ import { allPosts } from '@/content';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Posts = () => {
-	const t = useTranslations('common');
 	const locale = useLocale();
+	unstable_setRequestLocale(locale);
+	const t = useTranslations('common');
 	const format = useFormatter();
 
 	const posts = allPosts
 		.filter((post) => post.language === locale)
 		.splice(0, 2);
-
-	unstable_setRequestLocale(locale);
 
 
 	return (

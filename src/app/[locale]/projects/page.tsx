@@ -32,11 +32,11 @@ export const generateMetadata = async ({
 };
 
 const ProjectsPage = () => {
-	const t = useTranslations();
 	const locale = useLocale();
-	const projects = allProjects.filter((project) => project.language === locale);
-
 	unstable_setRequestLocale(locale);
+	const t = useTranslations();
+
+	const projects = allProjects.filter((project) => project.language === locale);
 
 	return (
 		<>

@@ -29,13 +29,13 @@ export const generateMetadata = async ({
 };
 
 const BlogPage = () => {
-	const t = useTranslations();
 	const locale = useLocale();
+	unstable_setRequestLocale(locale);
+	
+	const t = useTranslations();
 	const posts = allPosts
 		.filter((post) => post.language === locale)
 		.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-
-	unstable_setRequestLocale(locale);
 
 	return (
 		<>

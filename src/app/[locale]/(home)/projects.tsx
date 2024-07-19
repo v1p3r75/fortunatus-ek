@@ -8,13 +8,14 @@ import { allProjects } from '@/content';
 import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Projects = () => {
-	const t = useTranslations('common');
+	
 	const locale = useLocale();
+	unstable_setRequestLocale(locale);
+
+	const t = useTranslations('common');
 	const projects = allProjects
 		.filter((project) => project.language === locale)
 		.splice(0, 4);
-
-	unstable_setRequestLocale(locale);
 
 	return (
 		<section className='animate-fade-in animation-delay-4'>
