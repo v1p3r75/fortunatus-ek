@@ -11,6 +11,7 @@ import { allProjects } from '@/content';
 import { getContentWithFallback } from '@/utils/content';
 import { getLocalizedUrl } from '@/utils/url';
 import { Locale } from 'src/types/global';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 export const generateStaticParams = async () => {
 	return allProjects.map(({ slug }) => ({ slug }));
@@ -71,6 +72,7 @@ const ProjectLayout = ({ params }: ProjectLayoutProps) => {
 	if (!project) {
 		notFound();
 	}
+	unstable_setRequestLocale(params.locale!);
 
 	const { title, imageUrl, demoUrl, repoUrl } = project;
 

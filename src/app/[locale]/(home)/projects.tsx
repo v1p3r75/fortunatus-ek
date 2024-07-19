@@ -5,14 +5,16 @@ import GradientText from '@/components/ui/gradient-text';
 import ProjectCard from '@/components/project-card';
 import Link from '@/components/ui/link';
 import { allProjects } from '@/content';
-import { Locale } from 'src/types/global';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Projects = () => {
 	const t = useTranslations('common');
-	const locale = useLocale() as Locale;
+	const locale = useLocale();
 	const projects = allProjects
 		.filter((project) => project.language === locale)
 		.splice(0, 4);
+
+	unstable_setRequestLocale(locale);
 
 	return (
 		<section className='animate-fade-in animation-delay-4'>

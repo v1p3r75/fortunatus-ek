@@ -13,6 +13,7 @@ import { allPosts } from '@/content';
 import { getContentWithFallback } from '@/utils/content';
 import { getLocalizedUrl } from '@/utils/url';
 import { Locale } from 'src/types/global';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 export const generateStaticParams = async () => {
 	return allPosts.map((post) => ({ slug: post.slug }));
@@ -73,6 +74,8 @@ const BlogPostLayout = ({ params }: BlogPostLayoutProps) => {
 		slug: params.slug,
 		locale: params.locale,
 	});
+
+	unstable_setRequestLocale(params.locale!);
 
 	if (!post) {
 		notFound();

@@ -4,16 +4,19 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import GradientText from '@/components/ui/gradient-text';
 import Link from '@/components/ui/link';
 import { allPosts } from '@/content';
-import { Locale } from 'src/types/global';
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 const Posts = () => {
 	const t = useTranslations('common');
-	const locale = useLocale() as Locale;
+	const locale = useLocale();
 	const format = useFormatter();
 
 	const posts = allPosts
 		.filter((post) => post.language === locale)
 		.splice(0, 2);
+
+	unstable_setRequestLocale(locale);
+
 
 	return (
 		<section className='animate-fade-in animation-delay-5'>

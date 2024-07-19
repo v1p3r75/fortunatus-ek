@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { useLocale, useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import GradientText from '@/components/ui/gradient-text';
 import ProjectCard from '@/components/project-card';
@@ -35,6 +35,8 @@ const ProjectsPage = () => {
 	const t = useTranslations();
 	const locale = useLocale();
 	const projects = allProjects.filter((project) => project.language === locale);
+
+	unstable_setRequestLocale(locale);
 
 	return (
 		<>

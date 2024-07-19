@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import { useLocale, useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { useLocale } from 'next-intl';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import MDXContent from '@/components/mdx';
@@ -29,10 +29,12 @@ export const generateMetadata = async ({
 };
 
 const AboutPage = () => {
-	const locale = useLocale() as Locale;
+	const locale = useLocale();
 	const page = allPages.find(
 		(page) => page.slug === 'about' && page.language === locale,
 	);
+
+	unstable_setRequestLocale(locale);
 
 	if (!page) {
 		notFound();

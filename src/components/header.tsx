@@ -20,10 +20,10 @@ const Header = () => {
 	const [isVisible, setIsVisible] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
 
-	const { data: repo } = useSWR<RepoInfo>(
-		`/api/github?repoName=${REPO_NAME}`,
-		fetcher,
-	);
+	// const { data: repo } = useSWR<RepoInfo>(
+	// 	`/api/github?repoName=${REPO_NAME}`,
+	// 	fetcher,
+	// );
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -77,7 +77,8 @@ const Header = () => {
 						<RiStarFill className='transition-colors group-hover:text-yellow-400' />
 						<NumberTicker
 							className='text-sm text-foreground/70 group-hover:text-foreground'
-							value={repo ? repo.stars : 0}
+							// value={repo ? repo.stars : 0}
+							value={25}
 						/>
 					</div>
 				</Link>

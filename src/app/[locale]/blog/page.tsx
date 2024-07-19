@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { useLocale, useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 import { allPosts } from '@/content';
 import GradientText from '@/components/ui/gradient-text';
@@ -34,6 +34,8 @@ const BlogPage = () => {
 	const posts = allPosts
 		.filter((post) => post.language === locale)
 		.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+	unstable_setRequestLocale(locale);
 
 	return (
 		<>

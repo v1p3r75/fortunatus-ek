@@ -4,7 +4,7 @@ const SkillItem = ({ title, icon }: { title: string, icon: string }) => {
 
 	return (
 		<div key={title}>
-			<Image src={icon} alt={title} title={title} className="size-10 cursor-pointer text-white" />
+			<Image src={icon} alt={title} title={title} width={40} height={40} className="cursor-pointer" />
 		</div>
 	);
 };
