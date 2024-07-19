@@ -1,11 +1,11 @@
-type Locale = 'fr' | 'en' | undefined;
+export type Locale = 'fr' | 'en' | undefined;
 
-type Views = {
+export type Views = {
 	slug: string;
 	views: number;
 }
 
-type RepoInfo = {
+export type RepoInfo = {
 	stars: number;
 	forksCount: number;
 }

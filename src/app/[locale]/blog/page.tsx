@@ -6,6 +6,7 @@ import { allPosts } from '@/content';
 import GradientText from '@/components/ui/gradient-text';
 import { getLocalizedUrl } from '@/utils/url';
 import FilterPosts from './filter-posts';
+import { Locale } from 'src/types/global';
 
 export const generateMetadata = async ({
 	params,

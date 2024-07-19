@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SkillItem = ({title, icon}: {title: string, icon: string}) => {
+const SkillItem = ({ title, icon }: { title: string, icon: string }) => {
 
 	return (
 		<div key={title}>

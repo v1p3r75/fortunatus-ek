@@ -10,6 +10,7 @@ import Link from '@/components/ui/link';
 import { allProjects } from '@/content';
 import { getContentWithFallback } from '@/utils/content';
 import { getLocalizedUrl } from '@/utils/url';
+import { Locale } from 'src/types/global';
 
 export const generateStaticParams = async () => {
 	return allProjects.map(({ slug }) => ({ slug }));

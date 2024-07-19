@@ -12,6 +12,7 @@ import ViewCounter from '@/components/view-counter';
 import { allPosts } from '@/content';
 import { getContentWithFallback } from '@/utils/content';
 import { getLocalizedUrl } from '@/utils/url';
+import { Locale } from 'src/types/global';
 
 export const generateStaticParams = async () => {
 	return allPosts.map((post) => ({ slug: post.slug }));

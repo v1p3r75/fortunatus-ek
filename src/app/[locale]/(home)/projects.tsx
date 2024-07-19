@@ -5,6 +5,7 @@ import GradientText from '@/components/ui/gradient-text';
 import ProjectCard from '@/components/project-card';
 import Link from '@/components/ui/link';
 import { allProjects } from '@/content';
+import { Locale } from 'src/types/global';
 
 const Projects = () => {
 	const t = useTranslations('common');

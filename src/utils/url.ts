@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { defaultLocale } from '@/lib/navigation';
+import { Locale } from 'src/types/global';
 
 export function getLocalizedUrl({
 	locale,

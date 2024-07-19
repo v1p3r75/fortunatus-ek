@@ -1,5 +1,6 @@
 import type { Post, Project } from '@/content';
 import { defaultLocale } from '@/lib/navigation';
+import { Locale } from 'src/types/global';
 
 export function getContentWithFallback<T extends Post | Project>({
 	contentItems,

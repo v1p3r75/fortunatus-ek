@@ -3,10 +3,10 @@ import { useLocale, useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-import GradientText from '@/components/ui/gradient-text';
 import MDXContent from '@/components/mdx';
 import { allPages } from '@/content';
 import { getLocalizedUrl } from '@/utils/url';
+import { Locale } from 'src/types/global';
 
 export const generateMetadata = async ({
 	params,
@@ -29,7 +29,6 @@ export const generateMetadata = async ({
 };
 
 const AboutPage = () => {
-	const t = useTranslations('common');
 	const locale = useLocale() as Locale;
 	const page = allPages.find(
 		(page) => page.slug === 'about' && page.language === locale,

@@ -17,6 +17,7 @@ import Loading from '@/components/ui/loading';
 import Metric from '@/components/ui/metric';
 import Link from '@/components/ui/link';
 import { fetcher } from '@/lib/fetcher';
+import { RepoInfo } from 'src/types/global';
 
 type WrapperStyle = MotionStyle & {
 	'--x': MotionValue<string>;

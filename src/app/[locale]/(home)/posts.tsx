@@ -4,6 +4,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import GradientText from '@/components/ui/gradient-text';
 import Link from '@/components/ui/link';
 import { allPosts } from '@/content';
+import { Locale } from 'src/types/global';
 
 const Posts = () => {
 	const t = useTranslations('common');

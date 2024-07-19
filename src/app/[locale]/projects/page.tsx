@@ -9,6 +9,7 @@ import { getLocalizedUrl } from '@/utils/url';
 import Link from '@/components/ui/link';
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { siteConfig } from '@/config/site';
+import { Locale } from 'src/types/global';
 
 export const generateMetadata = async ({
 	params,

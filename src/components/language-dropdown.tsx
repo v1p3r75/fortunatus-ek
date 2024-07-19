@@ -15,6 +15,7 @@ import {
 	usePathname,
 	useRouter,
 } from '@/lib/navigation';
+import { Locale } from 'src/types/global';
 
 const LanguageDropdown = () => {
 	const t = useTranslations('common');

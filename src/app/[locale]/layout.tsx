@@ -13,6 +13,7 @@ import { cn } from '@/utils/cn';
 import { getLocalizedUrl } from '@/utils/url';
 
 import '@/styles/app.css';
+import { Locale } from 'src/types/global';
 
 export const viewport: Viewport = {
 	themeColor: {
