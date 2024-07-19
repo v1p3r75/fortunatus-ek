@@ -40,3 +40,5 @@ next-env.d.ts
 
 # velite
 .velite
+
+pnpm-lock.yaml
