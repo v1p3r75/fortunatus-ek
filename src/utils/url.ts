@@ -8,10 +8,10 @@ export function getLocalizedUrl({
 	slug = '',
 }:{
 	locale: Locale;
-	pathname?: '' | 'blog' | 'about' | 'projects';
+	pathname?: '' | 'blog' | 'projects';
 	slug?: string;
 }) {
-	let localPrefix = locale === defaultLocale ? '' : 'en';
+	let localPrefix = locale === defaultLocale ? '' : 'fr';
 
 	let url = [siteConfig.siteUrl, localPrefix, pathname, slug]
 		.filter(item => item)
