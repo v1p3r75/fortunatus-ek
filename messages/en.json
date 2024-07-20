@@ -20,15 +20,15 @@
 		"others": "Others"
 	},
 	"homePage": {
-		"description": "👋 Hi, I'm Elfried Fortunatus KIDJE, a frontend developer based in Taiwan who specializes in React and Next.js. I'm here to share learning and projects. Please feel free to read and discover.",
-		"subTitle": "Frontend.dev"
+		"description": "👋 Hi, I am Eflried Fortunatus KIDJE, a full stack web developer with 4 years of experience. I am passionate about building web and mobile applications. Specialized in PHP, JavaScript, React and various frameworks, I love writing code to design innovative and functional solutions. My background includes various projects, ranging from dynamic websites to mobile applications. Committed to offering high-quality products, I strive to stay at the forefront of the latest technologies.",
+		"subTitle": "Web and mobile developer"
 	},
 	"blogPage": {
 		"description": "Welcome to my blog! Here I will record my learning experience and knowledge in software development.",
 		"subTitle": "<highlight></highlight> posts about code and more..."
 	},
 	"projectsPage": {
-		"description": "Showcase of my projects."
+		"description": "List of some projects I have had to develop. For confidentiality reasons, several \"private\" projects are not mentioned here. Click on a project for more details."
 	},
 	"aboutPage": {
 		"description": "About my work experience, learning record, etc..."

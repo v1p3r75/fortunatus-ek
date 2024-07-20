@@ -12,70 +12,62 @@ language: fr
 
 Floky est un framework MVC (Modèle-Vue-Contrôleur) pour le développement d'applications web en PHP. Il offre une structure organisée pour votre code, des fonctionnalités puissantes et une flexibilité pour créer des applications web robustes et évolutives.
 
-## Main Features
+## Principales fonctionnalités
+- **Architecture MVC** : Organisez votre code de manière propre et modulaire.
+- **Routage puissant** : Gérez les URL de manière flexible pour diriger les requêtes vers les contrôleurs appropriés.
+- **Gestion de base de données** : Facilitez l'interaction avec les bases de données grâce à [NexaORM](https://github.com/v1p3r75/NexaORM/) (un ORM de nouvelle génération flexible, puissant et facile à utiliser en main).
+- **Sécurité** : Intégrez des mécanismes de sécurité pour protéger votre application contre les vulnérabilités courantes.
+- **Vue flexible** : Utilisez le moteur de template [BladeOne](https://github.com/EFTEC/BladeOne/) pour concevoir des vues riches et dynamiques.
+- **Conteneur de dépendances** : Utilisez un conteneur de dépendances pour gérer efficacement les services de votre application.
+- **Tests plus élégants** : Profitez de [Pest](https://pestphp.com/), un framework de test élégant pour PHP, pour écrire des tests propres, lisibles et expressifs pour votre application.
+- **Composants réutilisables** : Profitez des bibliothèques et des outils pour accélérer le développement.
+- **Documentation complète** : Un guide détaillé pour vous aider à démarrer rapidement.
 
-- **MVC architecture**: Organize your code in a clean and modular way.
-- **Powerful Routing**: Manage URLs flexibly to direct requests to the appropriate controllers.
-- **Database Management**: Facilitate interaction with databases thanks to [NexaORM](https://github.com/v1p3r75/NexaORM/) (a powerful and easy to use flexible new generation ORM in hand).
-- **Security**: Integrate security mechanisms to protect your application against common vulnerabilities.
-- **Flexible View**: Use the [BladeOne](https://github.com/EFTEC/BladeOne/) template engine to design rich and dynamic views.
-- **Dependency Container**: Use a dependency container to manage your application's services efficiently.
-- **More Elegant Tests**: Take advantage of [Pest](https://pestphp.com/), an elegant testing framework for PHP, to write clean, readable and expressive tests for your application.
-- **Reusable Components**: Take advantage of libraries and tools to accelerate development.
-- **Complete Documentation**: A detailed guide to help you get started quickly.
+## Pourquoi Floky ?
 
-## Why Floky ?
+L'idée derrière Floky n'est pas de **réinventer la roue**, mais de fournir un ensemble d'outils bien conçus et faciles à utiliser pour les petits projets. Nous avons cherché à simplifier le développement en évitant la complexité inutile, tout en offrant la flexibilité nécessaire pour créer des applications Web de qualité.
 
-The idea behind Floky is not to **reinvent the wheel**, but to provide a set of well-designed, easy-to-use tools for smaller projects. We sought to simplify development by avoiding unnecessary complexity, while still providing flexibility to create quality web applications.
-Floky was designed to meet a fundamental need: to allow developers to quickly start a project without having to spend weeks understanding how many tools work. We understand that sometimes you just need a lightweight and efficient tool to bring your ideas to life without being overwhelmed by a multitude of unnecessary features.
+Floky a été conçu pour répondre à un besoin fondamental : permettre aux développeurs de démarrer rapidement un projet sans avoir à passer des semaines à comprendre comment fonctionnent de nombreux outils. Nous comprenons que parfois, vous avez juste besoin d'un outil léger et efficace pour donner vie à vos idées sans être submergé par une multitude de fonctionnalités inutiles.
 
+Voici pourquoi Floky peut être le choix parfait pour votre prochain projet : - **Démarrage rapide** Avec Floky, vous pouvez rapidement configurer la structure de votre application et commencer à écrire du code fonctionnel en un rien de temps. Notre architecture simple et modulaire vous permet de vous concentrer sur la logique de votre application sans avoir à vous soucier de configurations complexes.
 
-Here's why Floky may be the perfect choice for your next project:
+- **Moins de courbe d'apprentissage** Contrairement à de nombreux frameworks massifs, Floky est conçu pour être intuitif. Vous n'avez pas besoin de passer des heures à comprendre la documentation ou à apprendre des concepts abstraits. Se familiariser avec des éléments tels que les routes, les intergiciels et d'autres concepts clés de Floky est un processus rapide et transparent.
 
-- **Quick Start**
+- **Léger et adaptable**
 
-With Floky, you can quickly set up your app structure and start writing working code in no time. Our simple, modular architecture allows you to focus on the logic of your application without having to worry about complex configurations.
+Floky est un framework léger qui ne surcharge pas votre projet avec des fonctionnalités inutiles. Il est idéal pour les petits projets, vous fournissant les outils essentiels pour créer des applications Web efficaces.
 
-- **Less Learning Curve**
+Que votre projet soit un petit site Web, une simple application Web ou un prototype, Floky peut vous aider à avancer rapidement sans sacrifier la qualité. Il offre la flexibilité dont vous avez besoin pour vous concentrer sur ce qui compte vraiment : donner vie à votre projet.
 
-Unlike many massive frameworks, Floky is designed to be intuitive. You don't need to spend hours understanding documentation or learning abstract concepts. Getting to grips with things like routes, middleware, and other key Floky concepts is a quick and seamless process.
-
-- **Lightweight and Adaptable**
-
-Floky is a lightweight framework that doesn't overload your project with unnecessary features. It is ideal for smaller projects, providing you with the essential tools to create effective web applications.
-
-Whether your project is a small website, a simple web application, or a prototype, Floky can help you move forward quickly without sacrificing quality. It provides the flexibility you need to focus on what really matters: bringing your project to life.
-
-So why wait? Try Floky today and start developing your ideas without unnecessary hassle and complications.
+Alors pourquoi attendre ? Essayez Floky dès aujourd'hui et commencez à développer vos idées sans tracas ni complications inutiles.
 
 ## Installation
 
-- Make sure you have Composer installed on your system. If not, you can download and install it from the official website of [Composer](https://getcomposer.org/download/).
+- Assurez-vous que Composer est installé sur votre système. Sinon, vous pouvez le télécharger et l'installer à partir du site Web officiel de [Composer](https://getcomposer.org/download/).
 
-- Run the Composer command to create and install the application dependencies:
+- Exécutez la commande Composer pour créer et installer les dépendances de l'application :
 
-     ```bash
-     composer create-project v1p3r75/floky
-     ```
+```bash
+composer create-project v1p3r75/floky
+```
 
-- You will now have the most recent version of your framework and all dependencies correctly installed.
+- Vous aurez maintenant la version la plus récente de votre framework et toutes les dépendances correctement installées.
 
 ## Documentation
 
-[Visit documentation](https:/floky-docs.vercel.app/) for more about **Floky**.
+[Consultez la documentation](https:/floky-docs.vercel.app/) pour en savoir plus sur **Floky**.
 
+## Contributeurs
 
-## Contributors
+Le développement de **Floky** est actuellement en cours et nous accueillons avec plaisir toute contribution de la communauté.
 
-Development of **Floky** is currently underway, and we welcome any contribution from the community.
+L'équipe de développement principale comprend actuellement les contributeurs suivants :
 
-The core development team currently includes the following contributors:
+- [Fortunatus KIDJE (v1p3r75)](https://github.com/v1p3r75) - Fondateur et développeur principal
+- [Kabirou ALASSANE (BlakvGhost)](https://github.com/BlakvGhost) - Développeur associé
 
-- [Fortunatus KIDJE (v1p3r75)](https://github.com/v1p3r75) - Founder and lead developer
-- [Kabirou ALASSANE (BlakvGhost)](https://github.com/BlakvGhost) - Associate developer
-
-We are excited to grow this project and add new features to meet the needs of the PHP developer community. Join us in this adventure and help make **Floky** an even lighter and more powerful tool for developing web applications in PHP.
+Nous sommes ravis de développer ce projet et d'ajouter de nouvelles fonctionnalités pour répondre aux besoins de la communauté des développeurs PHP. Rejoignez-nous dans cette aventure et contribuez à faire de **Floky** un outil encore plus léger et plus puissant pour développer des applications Web en PHP.
 
 ## Licence
 
-This project is licensed under the [MIT](https://en.wikipedia.org/wiki/MIT_License).
+Ce projet est sous licence [MIT](https://en.wikipedia.org/wiki/MIT_License).

@@ -1,7 +1,7 @@
 ---
 title: TimeTable
 slug: 'timetable'
-description: TimeTable est un projet qui consiste à déployer une application capable de gérer la planification des emplois du temps.
+description: TimeTable is a project that consists of deploying an application capable of managing the planning of timetables.
 imageUrl: '/projects/timetable/dashboard-2.png'
 repoName: 'timetable'
 repoUrl: 'https://github.com/v1p3r75/timetable'
@@ -11,7 +11,7 @@ language: en
 
 ## Description
 
-TimeTable est un projet qui consiste à déployer une application capable de gérer la planification des emplois du temps.
+TimeTable is a project that consists of deploying an application capable of managing the planning of timetables.
 
 ## Preview
 
@@ -40,111 +40,110 @@ TimeTable est un projet qui consiste à déployer une application capable de gé
 
 ## DEMO
 
-Vous pouvez tester le démo de l'application sur la version en ligne avec ce compte administrateur : 
+You can test the demo of the application on the online version with this admin account:
 
-    - Email : admin@test.com
-    - password : admin
-## Comment installer Django
+- Email: admin@test.com
+- password: admin
 
-Ouvrez votre terminal et exécutez la commande suivante pour installer Django à l'aide de l'outil de gestion de packages pip :
+## How to install Django
+
+Open your terminal and run the following command to install Django using the pip package management tool:
 ```bash
 pip install Django
 ```
-Si vous utilisez une version spécifique de Python, utilisez plutôt la commande suivante pour installer Django :
+If you are using a specific version of Python, use the following command to install Django instead:
 
 ```bash
 python -m pip install Django
-```	
-Attendez que l'installation se termine. Une fois terminée, vous devriez avoir Django installé sur votre machine.
+```
+Wait for the installation to complete. Once it is complete, you should have Django installed on your machine.
 
-Pour vérifier si Django est installé correctement, exécutez la commande suivante dans votre terminal :
+To check if Django is installed correctly, run the following command in your terminal:
 
 ```bash
 django-admin --version
 ```
-Cela affichera la version de Django installée.
+This will display the version of Django installed.
 
-Maintenant que vous avez Django installé, vous pouvez continuer à travailler sur le projet d'intégration IFRI 2022.
+Now that you have Django installed, you can continue working on the IFRI 2022 integration project.
 
-## Comment lancer l'application sur votre machine
+## How to launch the application on your machine
 
-Pour récuperer et lancer l'application sur votre machine, assurez vous d'abord d'avoir python et django installé sur votre machine. Ensuite procéder aux étapes suivantes :
+To retrieve and launch the application on your machine, first make sure you have python and django installed on your machine. Then proceed to the following steps:
 
 ```bash
-git clone https://github.com/v1p3r75/PIL1_2223_4.git
+git clone https://github.com/v1p3r75/timetable
 
-cd PIL1_2223_4
+cd timetable
 
 python manage.py migrate
 
 python manage.py runserver 8000
 ```
-L'application va démarrer sur l'addresse http://localhost:8000 : copier cet addresse et lancer-le dans le navigateur.
+The application will start on the address http://localhost:8000 : copy this address and launch it in the browser.
 
-L'application est maintenant lancé !
+The application is now launched!
 
+## How to work on the project
 
-## Comment travailler sur le projet
+To work on the project, follow the steps below:
 
-Pour travailler sur le projet, suivez les étapes ci-dessous :
+Make sure you get the necessary authorization to work on the project.
 
-Assurez-vous d'obtenir l'autorisation nécessaire pour travailler sur le projet.
-    
-- Clonez le référentiel sur votre machine si ce n'est pas déjà fait.
-    
-- Avant de commencer à travailler sur une nouvelle fonctionnalité, assurez-vous de créer une branche distincte pour celle-ci.
+- Clone the repository to your machine if you haven't already.
 
-- Utilisez la commande suivante pour créer une nouvelle branche à partir de la branche principale (main)
-    
+- Before you start working on a new feature, make sure to create a separate branch for it.
+
+- Use the following command to create a new branch from the main branch
+
 ```bash
-    git checkout -b nom_de_votre_branche
-```	
-    
-- Travaillez sur votre branche en effectuant les modifications nécessaires.
-    
-- Une fois que vous avez terminé les modifications, ajoutez les fichiers modifiés au suivi Git en utilisant la commande : git add .
-
-- Validez vos modifications en créant un commit descriptif : 
-```bash
-git commit -m "Description du commit"
-```	
-
-- Poussez votre branche sur le référentiel distant en utilisant la commande :
-```bash
-git push origin nom_de_votre_branche
+git checkout -b your_branch_name
 ```
 
--  Une fois que vous êtes satisfait de vos modifications et que vous souhaitez les intégrer au projet principal, créez une demande de fusion (pull request) sur la plateforme de gestion des projets.
+- Work on your branch by making the necessary changes.
 
-- Attendez la revue de code et les commentaires des autres membres de l'équipe.
+- Once you are done with the changes, add the changed files to the Git tracker using the command: git add .
 
-- Effectuez les ajustements nécessaires en fonction des commentaires reçus et continuez à pousser vos modifications sur votre branche.
+- Commit your changes by creating a descriptive commit:
+```bash
+git commit -m "Commit description"
+```
 
-- Une fois que votre demande de fusion a été approuvée, votre branche peut être fusionnée avec la branche principale (main) du projet.
+- Push your branch to the remote repository using the command:
+```bash
+git push origin your_branch_name
+```
 
-## L'erreur à éviter
+- Once you are satisfied with your changes and want to integrate them into the main project, create a pull request on the project management platform.
 
-Afin de maintenir un flux de travail efficace et de garantir la qualité du code, voici quelques erreurs à éviter lors de votre contribution au projet :
+- Wait for the code review and comments from other team members.
 
-- Ne travaillez pas directement sur la branche principale (main) du projet.
-    
-- Utilisez des branches distinctes pour chaque fonctionnalité.
-    
-- N'oubliez pas de créer des commits cohérents et descriptifs pour chaque modification.
-    
-- N'oubliez pas de tester vos modifications avant de les pousser sur le référentiel distant.
-    
-- Ne fusionnez pas votre propre branche sans passer par une revue de code par d'autres membres de l'équipe.
-    
-- Prenez en compte les commentaires et les suggestions de l'équipe lors de la revue de code et apportez les ajustements nécessaires.
-    
-- En suivant ces bonnes pratiques, nous pourrons maintenir un flux de travail efficace et garantir la qualité du code produit.
+- Make the necessary adjustments based on the comments received and continue pushing your changes to your branch.
 
+- Once your merge request has been approved, your branch can be merged into the main branch of the project.
 
-## Aide
+## Mistake to avoid
 
-Vous vous sentez pas à l'aise avec les commandes ? Vous pouvez faire les choses avec l'interface graphique de l'éditeur VS Code.
+In order to maintain an efficient workflow and ensure code quality, here are some mistakes to avoid when contributing to the project:
 
-## Plus d'aide 
+- Don't work directly on the main branch of the project.
 
-Contactez les autres membres de l'équipe
+- Use separate branches for each feature.
+
+- Don't forget to create coherent and descriptive commits for each change.
+
+- Don't forget to test your changes before pushing them to the remote repository.
+
+- Don't merge your own branch without going through a code review by other team members.
+
+- Take into account the team's comments and suggestions during the code review and make the necessary adjustments.
+
+- By following these best practices, we can maintain an efficient workflow and ensure the quality of the code produced.
+
+## Help
+
+Not comfortable with commands? You can do things with the VS Code editor GUI.
+
+## More Help
+
+Contact other team members
