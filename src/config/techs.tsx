@@ -65,11 +65,11 @@ const techs = {
 	mobile: [
 		{
 			title: 'React Native',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg',
+			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
 		},
 		{
 			title: 'Expo',
-			icon: '',
+			icon: '/light-expo.svg',
 		},
 	],
 	database: [

@@ -30,4 +30,5 @@ export const siteConfig = {
 			},
 		],
 	},
+	privateRepos: ['afrikflow'],
 };

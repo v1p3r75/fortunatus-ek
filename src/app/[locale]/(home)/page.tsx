@@ -1,8 +1,8 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
-import AboutPage from '../about/page';
 import Hero from './hero';
 import Projects from './projects';
 import Skills from './skills';
+import About from './about';
 
 const HomePage = ({ params: { locale } } : any) => {
 
@@ -12,7 +12,7 @@ const HomePage = ({ params: { locale } } : any) => {
 		<div className='space-y-16'>
 			<Hero />
 			<Skills />
-			<AboutPage />
+			<About />
 			<Projects />
 		</div>
 	);

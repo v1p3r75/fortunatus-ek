@@ -11,6 +11,14 @@ export const GET = async (req: NextRequest) => {
 	});
 
 	if (repoName) {
+		if (siteConfig.privateRepos.includes(repoName.toLowerCase())) { // Dont fetch private repos
+
+			return NextResponse.json({
+				stars: 10,
+				forksCount: 0,
+			});
+		}
+
 		const { data: repo } = await octokit.request('GET /repos/{owner}/{repo}', {
 			owner: siteConfig.githubUsername,
 			repo: repoName,
