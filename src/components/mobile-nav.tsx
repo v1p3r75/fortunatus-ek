@@ -37,6 +37,7 @@ const MobileNav = () => {
 						<Link
 							className='w-full gap-2 rounded px-2 py-1.5'
 							href={link.href}
+							target={link.title === 'cv' ? '_blank' : ''}
 						>
 							{link.icon}
 							{t(link.title)}
