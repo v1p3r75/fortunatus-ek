@@ -13,7 +13,7 @@ export const siteConfig = {
 	links: {
 		github: 'https://github.com/v1p3r75',
 		linkedin: 'https://www.linkedin.com/in/fortunatus-ek',
-		whatsapp: 'https://wa.me/0022996457545',
+		whatsapp: 'https://wa.me/+22996457545',
 		youtube: 'https://youtube.com/@devlancing',
 	},
 	openGraph: {

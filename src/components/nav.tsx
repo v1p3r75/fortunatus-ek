@@ -25,6 +25,7 @@ const Nav = () => {
 									{ 'text-foreground': isActive },
 								)}
 								href={item.href}
+								target={item.title === 'cv' ? '_blank' : ''}
 							>
 								<span>{t(item.title)}</span>
 							</Link>

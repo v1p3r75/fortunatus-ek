@@ -6,7 +6,7 @@ import { GroupId } from 'src/types/global';
 const SkillGroupItem = ({ title, id }: { title: string, id: GroupId }) => {
 
 	return (
-		<div className="flex flex-wrap items-center gap-2">
+		<div className="flex flex-wrap items-center gap-2 animate-fade-in animation-delay-5">
 			<GradientText
 				as='h4'
 				className='tracking-tight'

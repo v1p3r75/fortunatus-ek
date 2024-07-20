@@ -12,24 +12,24 @@ const techs = {
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
 		},
 		{
-			title: 'Bootstrap',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
-		},
-		{
-			title: 'TailwindCSS',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-		},
-		{
-			title: 'jQuery',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg',
-		},
-		{
 			title: 'ReactJS',
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
 		},
 		{
 			title: 'VueJS',
 			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+		},
+		{
+			title: 'jQuery',
+			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg',
+		},
+		{
+			title: 'Bootstrap',
+			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
+		},
+		{
+			title: 'TailwindCSS',
+			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
 		},
 	],
 	backend: [
@@ -51,7 +51,7 @@ const techs = {
 		},
 		{
 			title: 'Express',
-			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+			icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg',
 		},
 		{
 			title: 'AdonisJS',
