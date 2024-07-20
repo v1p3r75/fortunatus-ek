@@ -5,15 +5,12 @@ import GradientText from '@/components/ui/gradient-text';
 import Link from '@/components/ui/link';
 import { allPosts } from '@/content';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { Locale } from 'src/types/global';
 
 const Posts = () => {
-	
-	const locale = useLocale();
-	
-	unstable_setRequestLocale(locale);
-	
+		
 	const t = useTranslations('common');
-	
+	const locale = useLocale() as Locale;
 	const format = useFormatter();
 
 	const posts = allPosts

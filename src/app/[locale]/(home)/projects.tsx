@@ -5,15 +5,12 @@ import GradientText from '@/components/ui/gradient-text';
 import ProjectCard from '@/components/project-card';
 import Link from '@/components/ui/link';
 import { allProjects } from '@/content';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { Locale } from 'src/types/global';
 
 const Projects = () => {
 
-	const locale = useLocale();
-	
-	unstable_setRequestLocale(locale);
-
 	const t = useTranslations('common');
+	const locale = useLocale() as Locale;
 	
 	const projects = allProjects
 		.filter((project) => project.language === locale)

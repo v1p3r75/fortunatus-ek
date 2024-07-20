@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
 	RiGithubFill,
@@ -47,6 +47,7 @@ const CONTACTS = [
 ];
 
 const Hero = () => {
+
 	const t = useTranslations('homePage');
 
 	return (

@@ -4,8 +4,10 @@ import Hero from './hero';
 import Projects from './projects';
 import Skills from './skills';
 
-const HomePage = () => {
+const HomePage = ({ params: { locale } } : any) => {
 
+	unstable_setRequestLocale(locale)
+	
 	return (
 		<div className='space-y-16'>
 			<Hero />

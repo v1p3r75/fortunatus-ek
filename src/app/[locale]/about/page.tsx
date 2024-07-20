@@ -28,10 +28,10 @@ export const generateMetadata = async ({
 	};
 };
 
-const AboutPage = ({ params: { locale } } : any) => {
+const AboutPage = () => {
 
-	unstable_setRequestLocale(locale);
-
+	const locale = useLocale();
+	
 	const page = allPages.find(
 		(page) => page.slug === 'about' && page.language === locale,
 	);
