@@ -18,7 +18,7 @@ const navLinks = [
 	},
 	{
 		title: 'cv',
-		href: '/files/fortunatus-kidje-resume.pdf',
+		href: '/files/Fortuntus-KIDJE-CV.pdf',
 		icon: <RiPagesLine />,
 	},
 ];
